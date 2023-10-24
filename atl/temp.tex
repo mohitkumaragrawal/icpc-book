@@ -1,0 +1,81 @@
+\documentclass[a4paper, twocolumn]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[Glenn]{fncychap}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+
+\title{TEAM DEAD TEMPLATES}
+\author{mhtkrag}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\setlength\columnseprule{0.4pt}
+\geometry{a4paper,left=1cm,right=1cm,top=2cm,bottom=1.5cm}
+
+\lstset{frame=tb,
+  language=c++,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=2
+}
+
+\begin{document}
+\begin{titlepage}
+\maketitle
+\thispagestyle{empty}
+\pagebreak
+%\pagestyle{plain}
+\pagestyle{fancy}
+\lhead{}
+\rhead{}
+\chead{TEAM DEAD}
+\cfoot{}
+\tableofcontents
+\end{titlepage}
+
+\pagestyle{fancy}
+\chead{TEAM DEAD}
+\cfoot{- \thepage \ -}
+  
+\section{data-structures}
+\subsection{dsu}
+\lstinputlisting{codes/data-structures/dsu.cpp}
+\subsection{lazy-segment-tree}
+\lstinputlisting{codes/data-structures/lazy-segment-tree.cpp}
+\subsection{segment-tree}
+\lstinputlisting{codes/data-structures/segment-tree.cpp}
+\subsection{sparse-table}
+\lstinputlisting{codes/data-structures/sparse-table.cpp}
+\section{misc}
+\subsection{cppt}
+\lstinputlisting{codes/misc/cppt.cpp}
+\subsection{ordered-set}
+\lstinputlisting{codes/misc/ordered-set.cpp}
+\section{number-theory}
+\subsection{modular-int}
+\lstinputlisting{codes/number-theory/modular-int.cpp}
+\subsection{sieve}
+\lstinputlisting{codes/number-theory/sieve.cpp}
+\section{tree}
+\subsection{binary-lifting}
+\lstinputlisting{codes/tree/binary-lifting.cpp}
+\subsection{euler-tour}
+\lstinputlisting{codes/tree/euler-tour.cpp}
+\subsection{tree-lifing}
+\lstinputlisting{codes/tree/tree-lifing.cpp}
+\end{document}

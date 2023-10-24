@@ -1,0 +1,54 @@
+\documentclass[a4paper, twocolumn]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[Glenn]{fncychap}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+
+\title{TEAM DEAD TEMPLATES}
+\author{mhtkrag}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\setlength\columnseprule{0.4pt}
+\geometry{a4paper,left=1cm,right=1cm,top=2cm,bottom=1.5cm}
+
+\lstset{frame=tb,
+  language=c++,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=2
+}
+
+\begin{document}
+\begin{titlepage}
+\maketitle
+\thispagestyle{empty}
+\pagebreak
+%\pagestyle{plain}
+\pagestyle{fancy}
+\lhead{}
+\rhead{}
+\chead{TEAM DEAD}
+\cfoot{}
+\tableofcontents
+\end{titlepage}
+
+\pagestyle{fancy}
+\chead{TEAM DEAD}
+\cfoot{- \thepage \ -}
+  
