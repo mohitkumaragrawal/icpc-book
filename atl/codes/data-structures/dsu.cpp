@@ -9,17 +9,14 @@ struct DSU {
     }
   }
   int find(int x) {
-    if (x == parent[x])
-      return x;
+    if (x == parent[x]) return x;
     return parent[x] = find(parent[x]);
   }
   void merge(int x, int y) {
     x = find(x);
     y = find(y);
-    if (x == y)
-      return;
-    if (siz[x] < siz[y])
-      swap(x, y);
+    if (x == y) return;
+    if (siz[x] < siz[y]) swap(x, y);
     parent[y] = x;
     siz[x] += siz[y];
   }

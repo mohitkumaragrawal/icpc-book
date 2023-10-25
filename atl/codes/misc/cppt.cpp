@@ -7,7 +7,8 @@ using namespace std;
 #endif
 #ifdef _DEBUG
 void dbg_out() { cerr << endl; }
-template <typename Head, typename... Tail> void dbg_out(Head H, Tail... T) {
+template <typename Head, typename... Tail>
+void dbg_out(Head H, Tail... T) {
   cerr << ' ' << H;
   dbg_out(T...);
 }
@@ -35,6 +36,5 @@ int main() {
 
   ll T = 1;
   cin >> T;
-  for (ll t = 1; t <= T; ++t)
-    solve(t);
+  for (ll t = 1; t <= T; ++t) solve(t);
 }

@@ -1,4 +1,5 @@
-template <typename T, typename CombineT> struct SegmentTree {
+template <typename T, typename CombineT>
+struct SegmentTree {
   vector<T> tree;
   CombineT combine;
   T defaultValue;
@@ -11,7 +12,8 @@ template <typename T, typename CombineT> struct SegmentTree {
     build_tree(1, 0, n - 1);
   }
 
-  template <typename Itr> void init(Itr begin, Itr end) {
+  template <typename Itr>
+  void init(Itr begin, Itr end) {
     n = distance(begin, end);
     tree.resize(4 * n);
 
@@ -29,7 +31,8 @@ template <typename T, typename CombineT> struct SegmentTree {
     tree[id] = combine(tree[id * 2], tree[id * 2 + 1]);
   }
 
-  template <typename Itr> void build_tree(ll id, ll tl, ll tr, Itr begin) {
+  template <typename Itr>
+  void build_tree(ll id, ll tl, ll tr, Itr begin) {
     if (tl == tr) {
       tree[id] = *(begin + tl);
       return;
@@ -41,10 +44,8 @@ template <typename T, typename CombineT> struct SegmentTree {
   }
 
   T query(ll id, ll tl, ll tr, ll ql, ll qr) {
-    if (ql > tr || tl > qr)
-      return defaultValue;
-    if (ql <= tl && tr <= qr)
-      return tree[id];
+    if (ql > tr || tl > qr) return defaultValue;
+    if (ql <= tl && tr <= qr) return tree[id];
     ll tm = (tl + tr) / 2;
     return combine(query(id * 2, tl, tm, ql, qr),
                    query(id * 2 + 1, tm + 1, tr, ql, qr));

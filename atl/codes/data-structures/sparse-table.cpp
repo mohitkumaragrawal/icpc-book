@@ -7,10 +7,12 @@ struct max_op {
 struct gcd_op {
   ll operator()(ll a, ll b) { return __gcd(a, b); }
 };
-template <typename OperationT> struct sparse_table {
+template <typename OperationT>
+struct sparse_table {
   vector<vector<ll>> m;
   OperationT op;
-  template <typename Itr> void init(Itr begin, Itr end) {
+  template <typename Itr>
+  void init(Itr begin, Itr end) {
     ll sz = end - begin;
     ll lg = 63 - __builtin_clzll(sz);
     m.assign(sz, vector<ll>(lg + 1));
