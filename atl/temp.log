@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.6)  28 OCT 2023 13:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.6)  16 DEC 2023 11:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -221,26 +221,61 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout3 = `temp.toc'.
 
  [2]
-(codes/data-structures/dsu.cpp) (codes/data-structures/lazy-segment-tree.cpp)
-(codes/data-structures/segment-tree.cpp [1
+(codes/data-structures/dsu.cpp) (codes/data-structures/fenwick-tree.cpp)
+(codes/data-structures/lazy-segment-tree.cpp [1
 
 ])
+(codes/data-structures/segment-tree-beats.cpp
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-(codes/data-structures/sparse-table.cpp) (codes/misc/bitwise-tricks.cpp)
-(codes/misc/cppt.cpp [2]) (codes/misc/ordered-set.cpp)
-Overfull \hbox (6.38216pt too wide) in paragraph at lines 6--70
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+)
+Overfull \hbox (52.37035pt too wide) in paragraph at lines 300--63
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+(codes/data-structures/segment-tree.cpp [4])
+(codes/data-structures/sparse-table.cpp)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+(codes/graph/bellaman-ford.cpp) (codes/graph/floyd-warshall.cpp [5])
+(codes/graph/scc.cpp) (codes/misc/bitwise-tricks.cpp) (codes/misc/cppt.cpp
+[6]) (codes/misc/ordered-set.cpp)
+Overfull \hbox (6.38216pt too wide) in paragraph at lines 6--81
 [][][][][]  
  []
 
-(codes/number-theory/modular-int.cpp
+(codes/number-theory/crt.cpp) (codes/number-theory/euler-totient-function.cpp)
+(codes/number-theory/extended-euclid.cpp) (codes/number-theory/modular-int.cpp
+[7])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3])
-(codes/number-theory/sieve.cpp) (codes/strings/kmp.cpp) [4]
+
+(codes/number-theory/polard-rho.cpp
+Overfull \hbox (46.70033pt too wide) in paragraph at lines 3--4
+[][][][][][][][][][][][][][][][][]  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8])
+(codes/number-theory/sieve.cpp) (codes/strings/kmp.cpp [9])
 (codes/tree/binary-lifting.cpp) (codes/tree/euler-tour.cpp)
-(codes/tree/tree-lifing.cpp [5]) [6
+(codes/tree/tree-isomorphism.cpp [10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+)
+(codes/tree/tree-lifing.cpp [11]) [12
 
 ] (temp.aux)
  ***********
@@ -249,10 +284,10 @@ L3 programming layer <2023-08-29>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4211 strings out of 475247
- 62661 string characters out of 5757793
- 2201801 words of memory out of 5000000
- 25689 multiletter control sequences out of 15000+600000
+ 4537 strings out of 475247
+ 67954 string characters out of 5757793
+ 2273801 words of memory out of 5000000
+ 25983 multiletter control sequences out of 15000+600000
  563143 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,12n,65p,382b,1776s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -264,9 +299,9 @@ ublic/amsfonts/cm/cmr10.pfb><C:/Users/Mohit/AppData/Local/Programs/MiKTeX/fonts
 eX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Mohit/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/Mohit/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on temp.pdf (8 pages, 120811 bytes).
+Output written on temp.pdf (14 pages, 140634 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
+ 83 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
