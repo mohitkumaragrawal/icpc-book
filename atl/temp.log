@@ -1,44 +1,44 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.6)  16 DEC 2023 11:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.18)  18 DEC 2023 14:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./temp.tex
 (temp.tex
-LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-08-29>
-(C:\Users\Mohit\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+LaTeX2e <2023-11-01>
+L3 programming layer <2023-12-08>
+(C:\Program Files\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
-(C:\Users\Mohit\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+(C:\Program Files\MiKTeX\tex/latex/base\size10.clo
 File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count185
-\c@section=\count186
-\c@subsection=\count187
-\c@subsubsection=\count188
-\c@paragraph=\count189
-\c@subparagraph=\count190
-\c@figure=\count191
-\c@table=\count192
+\c@part=\count187
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
+\c@figure=\count193
+\c@table=\count194
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
 )
-(C:\Users\Mohit\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Users\aapon\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(C:\Users\Mohit\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
-(C:\Users\Mohit\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+(C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(C:\Users\Mohit\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+(C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count193
-\Gm@cntv=\count194
-\c@Gm@tempcnt=\count195
+\Gm@cnth=\count195
+\Gm@cntv=\count196
+\c@Gm@tempcnt=\count197
 \Gm@bindingoffset=\dimen141
 \Gm@wd@mp=\dimen142
 \Gm@odd@mp=\dimen143
@@ -49,8 +49,8 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layoutvoffset=\dimen148
 \Gm@dimlist=\toks18
 
-(C:\Users\Mohit\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-(C:\Users\Mohit\AppData\Local\Programs\MiKTeX\tex/latex/fncychap\fncychap.sty
+(C:\Users\aapon\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\aapon\AppData\Roaming\MiKTeX\tex/latex/fncychap\fncychap.sty
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \RW=\skip50
 \mylen=\skip51
@@ -61,49 +61,50 @@ Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \pxx=\skip56
 \backskip=\skip57
 )
-(C:\Users\Mohit\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count196
+(C:\Program Files\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count198
 \lst@gtempboxa=\box51
 \lst@token=\toks19
-\lst@length=\count197
+\lst@length=\count199
 \lst@currlwidth=\dimen149
-\lst@column=\count198
-\lst@pos=\count199
+\lst@column=\count266
+\lst@pos=\count267
 \lst@lostspace=\dimen150
 \lst@width=\dimen151
-\lst@newlines=\count266
-\lst@lineno=\count267
+\lst@newlines=\count268
+\lst@lineno=\count269
 \lst@maxwidth=\dimen152
 
-(C:\Users\Mohit\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+(C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count268
-\lst@skipnumbers=\count269
+\c@lstnumber=\count270
+\lst@skipnumbers=\count271
 \lst@framebox=\box52
 )
-(C:\Users\Mohit\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+(C:\Program Files\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
 Package: listings 2023/02/27 1.9 (Carsten Heinz)
-(C:\Users\Mohit\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+
+(C:\Program Files\MiKTeX\tex/latex/graphics\color.sty
 Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
 
-(C:\Users\Mohit\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
 
-(C:\Users\Mohit\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+(C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 )
-(C:\Users\Mohit\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
-) (C:\Users\Mohit\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
-Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
+(C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx))
+(C:\Program Files\MiKTeX\tex/latex/tools\verbatim.sty
+Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks20
 \verbatim@line=\toks21
 \verbatim@in@stream=\read2
 )
-(C:\Users\Mohit\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+(C:\Users\aapon\AppData\Roaming\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 
 \f@nch@headwidth=\skip58
@@ -116,19 +117,18 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@O@olf=\skip65
 \f@nch@O@orf=\skip66
 )
-(C:\Users\Mohit\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+(C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
-(C:\Users\Mohit\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+(C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
-(C:\Users\Mohit\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+(C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 )
-(C:\Users\Mohit\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
-File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count270
+(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-11-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count272
 \l__pdf_internal_box=\box53
 ) (temp.aux)
 \openout1 = `temp.aux'.
@@ -182,21 +182,19 @@ LaTeX Font Info:    ... okay on input line 37.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count271
-
-(C:\Users\Mohit\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
-ii
+\c@lstlisting=\count273
+(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count272
+\scratchcounter=\count274
 \scratchdimen=\dimen153
 \scratchbox=\box54
-\nofMPsegments=\count273
-\nofMParguments=\count274
+\nofMPsegments=\count275
+\nofMParguments=\count276
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count275
+\MPscratchCnt=\count277
 \MPscratchDim=\dimen154
-\MPnumerator=\count276
-\makeMPintoPDFobject=\count277
+\MPnumerator=\count278
+\makeMPintoPDFobject=\count279
 \everyMPtoPDFconversion=\toks23
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -211,7 +209,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [1
 
 
-{C:/Users/Mohit/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (temp.toc
+{C:/Users/aapon/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (temp.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -247,61 +245,66 @@ Overfull \hbox (52.37035pt too wide) in paragraph at lines 300--63
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-(codes/graph/bellaman-ford.cpp) (codes/graph/floyd-warshall.cpp [5])
-(codes/graph/scc.cpp) (codes/misc/bitwise-tricks.cpp) (codes/misc/cppt.cpp
-[6]) (codes/misc/ordered-set.cpp)
-Overfull \hbox (6.38216pt too wide) in paragraph at lines 6--81
+(codes/dp/sos-dp.cpp) (codes/graph/bellaman-ford.cpp [5])
+(codes/graph/floyd-warshall.cpp) (codes/graph/scc.cpp)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+(codes/misc/bitwise-tricks.cpp) (codes/misc/cppt.cpp)
+(codes/misc/ordered-set.cpp)
+Overfull \hbox (6.38216pt too wide) in paragraph at lines 6--84
 [][][][][]  
  []
 
 (codes/number-theory/crt.cpp) (codes/number-theory/euler-totient-function.cpp)
-(codes/number-theory/extended-euclid.cpp) (codes/number-theory/modular-int.cpp
-[7])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-(codes/number-theory/polard-rho.cpp
+(codes/number-theory/extended-euclid.cpp [7])
+(codes/number-theory/modular-int.cpp) (codes/number-theory/polard-rho.cpp
 Overfull \hbox (46.70033pt too wide) in paragraph at lines 3--4
 [][][][][][][][][][][][][][][][][]  
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3179) has occurred while \output is active []
 
- [8])
-(codes/number-theory/sieve.cpp) (codes/strings/kmp.cpp [9])
-(codes/tree/binary-lifting.cpp) (codes/tree/euler-tour.cpp)
-(codes/tree/tree-isomorphism.cpp [10]
+ [8]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
-(codes/tree/tree-lifing.cpp [11]) [12
+(codes/number-theory/sieve.cpp [9]) (codes/strings/kmp.cpp)
+(codes/strings/z-algorithm.cpp) (codes/tree/binary-lifting.cpp [10])
+(codes/tree/euler-tour.cpp) (codes/tree/hld.cpp
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11])
+(codes/tree/tree-isomorphism.cpp
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12])
+(codes/tree/tree-lifing.cpp) [13
 
 ] (temp.aux)
  ***********
-LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-08-29>
+LaTeX2e <2023-11-01>
+L3 programming layer <2023-12-08>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4537 strings out of 475247
- 67954 string characters out of 5757793
- 2273801 words of memory out of 5000000
- 25983 multiletter control sequences out of 15000+600000
+ 4611 strings out of 474490
+ 67391 string characters out of 5753627
+ 2280473 words of memory out of 5000000
+ 26803 multiletter control sequences out of 15000+600000
  563143 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,12n,65p,382b,1776s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Mohit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmbx10.pfb><C:/Users/Mohit/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb><C:/Users/Mohit/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb><C:/Users/Mohit/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Mohit/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Mohit/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/Mohit/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on temp.pdf (14 pages, 140634 bytes).
+ 57i,12n,72p,382b,1779s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Progra
+m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl1
+0.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on temp.pdf (15 pages, 144176 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
+ 86 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

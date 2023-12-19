@@ -1,100 +1,87 @@
-#include "bits/stdc++.h"
+#include <bits/stdc++.h>
 using namespace std;
 
-const int N = 2e5 + 5;
-const int D = 19;
-const int S = (1 << D);
+using ll = long long;
 
-int n, q, v[N];
-vector<int> adj[N];
+template <int SZ, bool VALS_IN_EDGES>
+struct HLD {
+  int N;
+  vector<int> adj[SZ];
+  int par[SZ], root[SZ], depth[SZ], sz[SZ], ti;
+  int pos[SZ];
 
-int sz[N], p[N], dep[N];
-int st[S], id[N], tp[N];
+  vector<int> rpos;  // not used but could be useful;
 
-void update(int idx, int val) {
-	st[idx += n] = val;
-	for (idx /= 2; idx; idx /= 2) st[idx] = max(st[2 * idx], st[2 * idx + 1]);
-}
+  void ae(int x, int y) {
+    adj[x].push_back(y);
+    adj[y].push_back(x);
+  }
 
-int query(int lo, int hi) {
-	int ra = 0, rb = 0;
-	for (lo += n, hi += n + 1; lo < hi; lo /= 2, hi /= 2) {
-		if (lo & 1) ra = max(ra, st[lo++]);
-		if (hi & 1) rb = max(rb, st[--hi]);
-	}
-	return max(ra, rb);
-}
+  void dfsSz(int x) {
+    sz[x] = 1;
+    for (auto &y : adj[x]) {
+      par[y] = x;
+      depth[y] = depth[x] + 1;
+      adj[y].erase(find(adj[y].begin(), adj[y].end(), x));
+      dfsSz(y);
+      sz[x] += sz[y];
+      if (sz[y] > sz[adj[x][0]]) swap(y, adj[x][0]);
+    }
+  }
 
-int dfs_sz(int cur, int par) {
-	sz[cur] = 1;
-	p[cur] = par;
-	for (int chi : adj[cur]) {
-		if (chi == par) continue;
-		dep[chi] = dep[cur] + 1;
-		p[chi] = cur;
-		sz[cur] += dfs_sz(chi, cur);
-	}
-	return sz[cur];
-}
+  void dfsHld(int x) {
+    pos[x] = ti++;
+    rpos.push_back(x);
 
-int ct = 1;
+    for (auto &y : adj[x]) {
+      root[y] = (y == adj[x][0] ? root[x] : y);
+      dfsHld(y);
+    }
+  }
 
-void dfs_hld(int cur, int par, int top) {
-	id[cur] = ct++;
-	tp[cur] = top;
-	update(id[cur], v[cur]);
-	int h_chi = -1, h_sz = -1;
-	for (int chi : adj[cur]) {
-		if (chi == par) continue;
-		if (sz[chi] > h_sz) {
-			h_sz = sz[chi];
-			h_chi = chi;
-		}
-	}
-	if (h_chi == -1) return;
-	dfs_hld(h_chi, cur, top);
-	for (int chi : adj[cur]) {
-		if (chi == par || chi == h_chi) continue;
-		dfs_hld(chi, cur, chi);
-	}
-}
+  void init(int _N, int R = 0) {
+    N = _N;
+    par[R] = depth[R] = ti = 0;
+    dfsSz(R);
+    root[R] = R;
+    dfsHld(R);
+  }
 
-int path(int x, int y) {
-	int ret = 0;
-	while (tp[x] != tp[y]) {
-		if (dep[tp[x]] < dep[tp[y]]) swap(x, y);
-		ret = max(ret, query(id[tp[x]], id[x]));
-		x = p[tp[x]];
-	}
-	if (dep[x] > dep[y]) swap(x, y);
-	ret = max(ret, query(id[x], id[y]));
-	return ret;
-}
+  int lca(int x, int y) {
+    for (; root[x] != root[y]; y = par[root[y]]) {
+      if (depth[root[x]] > depth[root[y]]) swap(x, y);
+    }
+    return depth[x] < depth[y] ? x : y;
+  }
 
-int main() {
-	scanf("%d%d", &n, &q);
-	for (int i = 1; i <= n; i++) scanf("%d", &v[i]);
-	for (int i = 2; i <= n; i++) {
-		int a, b;
-		scanf("%d%d", &a, &b);
-		adj[a].push_back(b);
-		adj[b].push_back(a);
-	}
-	dfs_sz(1, 1);
-	dfs_hld(1, 1, 1);
-	while (q--) {
-		int t;
-		scanf("%d", &t);
-		if (t == 1) {
-			int s, x;
-			scanf("%d%d", &s, &x);
-			v[s] = x;
-			update(id[s], v[s]);
-		} else {
-			int a, b;
-			scanf("%d%d", &a, &b);
-			int res = path(a, b);
-			printf("%d ", res);
-		}
-	}
-}
+  int dist(int x, int y) { return depth[x] + depth[y] - 2 * depth[lca(x, y)]; }
+
+  template <class BinaryOp>
+  void processPath(int x, int y, BinaryOp op) {
+    for (; root[x] != root[y]; y = par[root[y]]) {
+      if (depth[root[x]] > depth[root[y]]) swap(x, y);
+      op(pos[root[y]], pos[y]);
+    }
+    if (depth[x] > depth[y]) swap(x, y);
+    op(pos[x] + VALS_IN_EDGES, pos[y]);
+  }
+
+  void modifyPath(int x, int y, int v) {
+    processPath(x, y, [this, &v](int l, int r) {
+      // modify range [l, r]
+    });
+  }
+
+  ll queryPath(int x, int y) {
+    ll res = 0;
+    processPath(x, y, [this, &res](int l, int r) {
+      // query range [l, r]
+    });
+    return res;
+  }
+
+  void modifySubtree(int x, int v) {
+    // update range
+    // [ pos[x] + VALS_IN_EDGES, pos[x] + sz[x] - 1 ]
+  }
+};
